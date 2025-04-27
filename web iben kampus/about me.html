@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - Web LALU AMARIN EMGIRINATA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #dcdcdc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        .container-navbar {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .ul-navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .li-navbar {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .li-navbar a {
+            color: #dcdcdc;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .li-navbar a:hover {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        .about-img {
+            display: block;
+            margin: 30px auto;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .video-section, .transformation-section, .footer-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .video-caption, .transformation-section h2 {
+            color: #dcdcdc;
+        }
+
+        .transformation-section img, .transformation-section video {
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .transformation-section p {
+            color: #dcdcdc;
+            margin-top: 10px;
+        }
+
+        .footer-section {
+            text-align: center;
+            padding: 20px;
+            color: #dcdcdc;
+            background-color: #222;
+        }
+
+        @media (max-width: 768px) {
+            .about-img {
+                width: 90%;
+            }
+
+            .transformation-section img, .transformation-section video {
+                max-width: 90%;
+            }
+        }
+
+        .nav-btn-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #444;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-navbar">
+        <ul class="ul-navbar">
+            <li class="li-navbar"><a href="index.html">HOME</a></li>
+            <li class="li-navbar"><a href="about me.html">ABOUT ME</a></li>
+            <li class="li-navbar"><a href="contact me.html">CONTACT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-btn-fixed">
+        <button class="nav-btn" onclick="document.getElementById('about').scrollIntoView();">Project</button>
+        <button class="nav-btn" onclick="document.getElementById('transformation').scrollIntoView();">Transformasi</button>
+        <button class="nav-btn" onclick="document.getElementById('result').scrollIntoView();">Hasil</button>
+    </div>
+
+    <div class="video-section" id="about">
+        <h1 class="video-caption">PROJECT PERTAMAKU ADALAH DIRIKU SENDIRI</h1>
+        <img src="aku.jpg" alt="Foto Aku" class="about-img">
+        <p style="max-width: 600px; margin: 20px auto; color: #dcdcdc;">
+            Halo! Aku Lalu Amarin Emgirinata, umurku baru 21 tahun dan baru memulai perubahanku mulai dari menurunkan berat badanku dari 98kg hingga 64kg. 
+            Diet ini termasuk project soalnya aku merencanakan dan mengatur pola hidup dengan berolahraga dan menjaga pola makan selama 1 tahun hingga saat ini. 
+            Diet ini berawal di awal tahun 2024, dan sekarang aku berhasil mendapatkan badan idealku, tentunya mendapat apresiasi dari keluarga, teman dan juga termasuk dosenku.
+        </p>
+
+        <p style="max-width: 600px; margin: 20px auto; font-style: italic; color: #dcdcdc;">
+            Saat ini aku sedang berkuliah di UNIZAR dan baru semester 4. 
+            Sebelum aku kuliah, kegiatanku adalah bekerja. 
+            Perjalanan karirku dimulai pada tahun 2022 setelah lulus SMA. 
+            Aku pertama kali kerja di warung nasi padang di bagian dapur selama satu tahun, lalu kerja di Gojek selama 2 bulan, 
+            kemudian kerja di bagian kasir di toko tas selama 5 bulan, dan setelah itu sambil kuliah aku juga kerja di warkop. 
+            Prestasiku adalah pernah masuk 10 besar lomba karate aliran Ishikawa. 
+            Skillku cenderung ke coding, contohnya web ini yang aku buat sendiri walaupun skillku masih kurang, aku akan terus berusaha berkembang.
+        </p>
+    </div>
+
+    <div class="transformation-section" id="transformation">
+        <h2>Perjalanan Transformasiku 💪</h2>
+
+        <div style="margin-bottom: 40px;">
+            <img src="aku gemuk.jpg" alt="Sebelum Gym">
+            <p>Sebelum Perjalanan Gym, Berat Badanku 98kg di Tahun 2023</p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <video width="320" height="240" controls>
+                <source src="aku gym.mp4" type="video/mp4">
+            </video>
+            <p>Proses Latihan di Gym Awal Tahun 2024</p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="aku gemuk 2.jpg" alt="Sebelum Gym">
+            <p>Pertengahan Tahun Setelah Gym 2 Bulan</p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="gym 1.jpg" alt="Sebelum Gym">
+            <p>Masuk 3 Bulan di Gym, Berat Badan 84kg</p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="gym 22.jpg" alt="Sebelum Gym">
+            <p>Dan di 4 Bulan Mulai Terlihat Hasilnya 80kg</p>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="gym 4.jpg" alt="Sebelum Gym">
+            <p>Ini Bulan Ke 5 Dan Sayap Mulai Terbentuk Berat Badan 79kg</p>
+        </div>
+
+        <div>
+            <img src="sempurna.jpg" alt="Setelah Gym">
+            <p>Hasil Setelah Diet dan Gym, Berat Badanku 68kg Tahun 2025</p>
+        </div>
+    </div>
+
+    <div class="footer-section" id="result">
+        <h1>Jangan pernah takut memulai sesuatu yang kamu tidak pernah lakukan!</h1>
+        <h2>Tapi takutlah karena kamu tidak pernah memulainya!</h2>
+        <h3>Web Lalu Amarin Emgirinata</h3>
+    </div>
+
+</body>
+</html>
